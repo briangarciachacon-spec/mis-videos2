@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Redirección de Video</title>
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const year = urlParams.get('year'); // Año que viene en la URL
+  const correctYear = "2025"; // Cambia esto cada año
+  const videoURL = "https://www.youtube.com/watch?v=https://www.youtube.com/watch?v=U9dsBTnAbmw"; // Pon tu video
+
+  if(year === 2025){
+    window.location.href = videoURL; // Redirige al video
+  } else {
+    document.write("<h2>Este QR ya no es válido para este año.</h2>");
+  }
+</script>
+</head>
+<body>
+</body>
+</html>
